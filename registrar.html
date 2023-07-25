@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header id="inicio">
+        <nav>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo Voltage">
+            </a>
+            <div>
+                <a href="index.html">INICIO</a>
+                <a href="catalogo.html" >CATÁLOGO</a>
+                <a href="equipo.html">EQUIPO</a>
+                <a href="#" id="facts">FACTS</a>
+                <a href="#registro"class="activo">LOGIN</a>
+            </div>
+      </nav>
+    </header>
+
+    <section id="registro">
+       
+        <h1>SE PARTE DE NUESTRA COMUNIDAD!</h1>
+        <div id="datos">
+            <form action="#" method="POST" autocomplete="on">
+                <fieldset class="datos">
+                    <legend>Registra tu cuenta</legend>
+                    <div id="mensajes"></div>
+
+                    <div>
+                        <label for="nombre">Nombre (*)</label><br>
+                        <input type="text" id="nombre" title="nombre">
+                    </div>
+
+                    <div>
+                        <label for="apellido">Apellidos (*)</label><br>
+                        <input type="text" id="apellido" title="Apellido">
+                    </div>
+
+                    <div>
+                        <select name="pais" id="pais">
+                            <option value="uruguay">+598</option>
+                            <option value="espana">+34</option>
+                            <option value="brasil">+55</option>
+                            <option value="colombia">+57</option>
+                            <option value="argentina">+54</option>
+                        </select>
+                        <label for="num">Número (*)</label><br>
+                        <input type="text" id="numero" title="numero">
+                    </div>
+
+                    <div>
+                        <label for="mail">Mail (*)</label><br>
+                        <input type="text" id="mail" title="Email">
+                    </div>
+
+                    <div>
+                        <label for="confirmarMail">Confirmar mail (*)</label><br>
+                        <input type="text" id="confirmarMail" title="Confirmar Email">
+                    </div>
+
+                    <div>
+                        <label for="contrasena">Contrasena (*)</label><br>
+                        <input type="password" id="contrasena" title="contrasena">
+                       <iconify-icon icon="ion:eye-sharp" class="ojo"></iconify-icon>
+                    </div>
+
+                    <div>
+                        <label for="ConContrasena">Confirmar contrasena (*)</label><br>
+                        <input type="password" id="conContrasena" title="Confirmar contrasena">
+                    </div>
+<div>
+    <input type="button" id="boton" value="Ingresar">
+</div>
+                </fieldset></form>
+</div>
+    </section>
+
+    
+    
+<footer></footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="js/registro.js"></script>
+</body>
+</html>
