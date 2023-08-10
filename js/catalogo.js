@@ -96,8 +96,6 @@ function cargarTe(_unArray) {
             </article>`;
     }
     document.querySelector("#catalogo").innerHTML = contenido;
-
-    // Agregar evento a los botones de "Agregar al Carrito"
     const botonesAgregarCarrito = document.querySelectorAll(".agregar-carrito");
     botonesAgregarCarrito.forEach((boton) => {
         boton.addEventListener("click", agregarAlCarrito);
@@ -158,7 +156,6 @@ function agregarAlCarrito(event) {
     }
 }
 
-// Carga inicial del catálogo
 function cargarCatalogo() {
     const carrito = localStorage.getItem("carrito") ? JSON.parse(localStorage.getItem("carrito")) : [];
     cargarTe(carrito);
