@@ -1,9 +1,11 @@
 contador = 0
 btIzq = document.querySelector("#atras")
 btDer = document.querySelector("#adelante")
+btInfoSemillas = document.querySelector("#infoSemillas")
 
 btIzq.addEventListener("click", moverIzq);
 btDer.addEventListener("click", moverDer);
+btInfoSemillas.addEventListener("click", clickInfoSemillas);
 document.querySelector("#facts").addEventListener("click", modalOn)
 document.querySelector("#cerrar").addEventListener("click", modalOf)
 
@@ -46,4 +48,34 @@ function modalOn() {
 
 function modalOf() {
   modal.style.display = "none";
+}
+
+function obtenerInfoSemillaAleatoria() {
+  return new Promise((resolve, reject) => {
+    fetch('datosDeSemillas.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('No se pudo obtener el archivo de semillas');
+        }
+        return response.json();
+      })
+      .then(semillas => {
+        const indiceAleatorio = Math.floor(Math.random() * semillas.length);
+        resolve(semillas[indiceAleatorio]);
+      })
+      .catch(error => {
+        reject(error);
+      });
+  });
+}
+
+function clickInfoSemillas() {
+  obtenerInfoSemillaAleatoria()
+    .then(semilla => {
+      console.log('Información sobre semilla obtenida:', semilla.descripcion);
+      alert('Información sobre semilla obtenida: ' + semilla.descripcion);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
 }

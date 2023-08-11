@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "Semilla de girasol",
+        "descripcion": "La semilla de girasol es una excelente fuente de ácidos grasos saludables y vitamina E."
+    },
+    {
+        "nombre": "Semilla de chía",
+        "descripcion": "Las semillas de chía son ricas en fibra, ácidos grasos omega-3 y antioxidantes."
+    },
+    {
+        "nombre": "Semilla de lino",
+        "descripcion": "Las semillas de lino son una buena fuente de fibra dietética y compuestos saludables llamados lignanos."
+    }
+]
