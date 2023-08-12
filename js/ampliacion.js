@@ -68,7 +68,8 @@ function recomendaciones() {
 
   }
 
-  document.querySelector("#recomendaciones").innerHTML = contenido
+  $("#recomendaciones").html(contenido)
 
 }
+
 
