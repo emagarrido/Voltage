@@ -18,7 +18,7 @@ function cargarCatalogo(_unArray) {
                 <h2>${_unArray[i].ingredientes}</h2>
                 <h3>Nivel de Teina: ${_unArray[i].nivelTeina}</h3>
                 <a href="ampliacion.html?id=${_unArray[i].id}">VER MÁS</a>
-                <button class="agregar-carrito" data-id="${_unArray[i].id}">Agregar al Carrito</button>
+                <a class="agregar-carrito btnAgregarAlCarrito" data-id="${_unArray[i].id}">Agregar al Carrito</a>
             </article>`;
     }
     document.querySelector("#catalogo").innerHTML = contenido;

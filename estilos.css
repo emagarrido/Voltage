@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
 
-*{margin: 0px;padding: 0px; text-decoration: none;}
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
 
-body{
+body {
     font-family: 'Chivo', sans-serif;
     background-image: url(img/pattern.jpg);
     background-repeat: repeat-y;
@@ -11,60 +15,60 @@ body{
     background-size: 100%;
 }
 
-#inicio a img{
+#inicio a img {
     width: 90px;
     height: 90px;
 }
 
-.activo{
+.activo {
     border-bottom: white 2px solid;
 }
 
-nav{
+nav {
     background-color: #111111;
     width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding: 20px 0px;
-    font-family:  'Chelsea Market';
+    font-family: 'Chelsea Market';
 }
 
-#banner{
-    background-image: url(img/banner_te.jpg) ;
+#banner {
+    background-image: url(img/banner_te.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100%;
-    height:400px;
+    height: 400px;
     box-shadow: inset 0 0 10px 3px black;
 }
 
-#banner h1{
+#banner h1 {
     color: #e6e6e9;
     text-align: center;
     padding-top: 2em;
     padding-right: 30px;
     font-size: 4em;
     font-weight: 800;
-    font-family: 'Chelsea Market' ;  
+    font-family: 'Chelsea Market';
 }
 
-nav div a{
+nav div a {
     color: white;
     padding: 15px 20px;
     margin-left: 5px;
     text-decoration: none;
-    transition: all 0.3s; 
+    transition: all 0.3s;
     font-size: 0.9em;
-    font-weight:500; 
+    font-weight: 500;
     position: relative;
     overflow: hidden;
     display: inline-block;
 }
- 
+
 nav div a:after {
-    content:"";
+    content: "";
     position: absolute;
     bottom: 0;
     left: -100%;
@@ -74,30 +78,34 @@ nav div a:after {
     transition: left .6s;
 }
 
-nav div a:hover:after{
+nav div a:hover:after {
     left: 0;
 }
 
-nav img{display: block;
-padding-left: 30px;}
+nav img {
+    display: block;
+    padding-left: 30px;
+}
 
-#centro{
+#centro {
     margin: 0 auto;
     width: 70%;
 }
 
 /*Estaciones*/
 
-#estacion,#catalogo{
+#estacion,
+#catalogo {
     display: flex;
     flex-wrap: wrap;
-    align-items:flex-start;
+    align-items: flex-start;
     justify-content: center;
     margin-left: 2em;
     padding-bottom: 1em;
 }
 
-#estacion h1,#catalogo h1{
+#estacion h1,
+#catalogo h1 {
     margin-top: 20px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -106,7 +114,7 @@ padding-left: 30px;}
     font-family: 'Chelsea Market';
 }
 
-.titulo{
+.titulo {
     font-size: 2.5em;
     text-align: center;
     letter-spacing: 2px;
@@ -116,25 +124,29 @@ padding-left: 30px;}
     font-family: 'Chelsea Market';
 }
 
-#estacion h2,#catalogo h2{
+#estacion h2,
+#catalogo h2 {
     letter-spacing: normal;
     font-weight: 400;
     font-size: 1em;
 }
 
-#estacion h3,#catalogo h3{
+#estacion h3,
+#catalogo h3 {
     font-size: 0.9em;
     font-weight: 500;
     margin-top: 0.5em;
     text-align: left;
 }
 
-#estacion div,#catalogo div{
+#estacion div,
+#catalogo div {
     width: 100%;
-    margin-bottom: 1em; 
+    margin-bottom: 1em;
 }
 
-#estacion article,#catalogo article{
+#estacion article,
+#catalogo article {
     width: 20%;
     display: flex;
     border: #111111 solid 1px;
@@ -152,62 +164,88 @@ padding-left: 30px;}
 }
 
 
-#estacion img,#catalogo img{
+#estacion img,
+#catalogo img {
     width: 70%;
 
 }
 
-#estacion a, #catalogo a,#recomendacion a,#info a, #modal a{
-    font-family:'Chelsea Market' ;
-   border-bottom: #111111 solid 1px;
+#estacion a,
+#catalogo a,
+#recomendacion a,
+#info a,
+#modal a {
+    font-family: 'Chelsea Market';
+    border-bottom: #111111 solid 1px;
     padding: 5px;
     color: black;
     justify-self: center;
     margin-right: 1em;
 
 }
-#estacion a:hover, #catalogo a:hover,#recomendacion a:hover,#info a:hover, #modal a:hover{
-    border: white solid 1px;
-   background-color:#111111d7;   
-   color: white;
 
-   transition: all 1s;
-   }
+#estacion a:hover,
+#catalogo a:hover,
+#recomendacion a:hover,
+#info a:hover,
+#modal a:hover {
+    border: white solid 1px;
+    background-color: #111111d7;
+    color: white;
+    transition: all 1s;
+}
+
+
+.btnAgregarAlCarrito {
+    font-family: 'Chelsea Market';
+    border-bottom: #111111 solid 1px;
+    padding: 5px;
+    color: black;
+    justify-self: center;
+    margin-right: 1em;
+}
+
+.btnAgregarAlCarrito:hover{
+    border: white solid 1px;
+    background-color: #111111d7;
+    color: white;
+    transition: all 1s;
+}
 
 
 /*Grilla*/
 
-#grilla{
+#grilla {
     height: 80vh;
     display: grid;
-    grid-template-columns: repeat(4,1fr); 
-    grid-template-rows: 1fr 1fr;  
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
     padding-top: 2em;
     font-family: 'Chelsea Market';
 }
 
-#grilla article{
+#grilla article {
     background-size: cover;
     background-position: center center;
     color: white;
     align-items: center;
 }
 
-#grilla article p{
+#grilla article p {
     font-weight: 500;
     font-size: 0.8em;
     line-height: 1.6em;
     margin: 1em;
-    font-family:'Chivo', sans-serif;
+    font-family: 'Chivo', sans-serif;
 }
 
-#grilla article h3{
+#grilla article h3 {
     font-weight: 400;
     font-size: 2em;
     margin-bottom: 0.5em;
 }
 
-#grilla article:nth-of-type(1){ 
+#grilla article:nth-of-type(1) {
     grid-column: span 2;
     grid-row: span 1;
     background-image: url(img/grilla1_dark.png);
@@ -220,11 +258,11 @@ padding-left: 30px;}
     color: black;
 }
 
-#grilla article:nth-of-type(1) a{
+#grilla article:nth-of-type(1) a {
     color: #111111;
 }
 
-#grilla article:nth-of-type(2){
+#grilla article:nth-of-type(2) {
     background-color: #111111;
     display: flex;
     flex-direction: column;
@@ -233,7 +271,7 @@ padding-left: 30px;}
     text-align: center;
 }
 
-#grilla article:nth-of-type(3){
+#grilla article:nth-of-type(3) {
     background-image: url(img/grilla3.jpg);
     display: flex;
     flex-direction: column;
@@ -243,7 +281,7 @@ padding-left: 30px;}
     transition: all 1s;
 }
 
-#grilla article:nth-of-type(4){
+#grilla article:nth-of-type(4) {
     background-color: #111111;
     transition: all 1s;
     display: flex;
@@ -253,7 +291,7 @@ padding-left: 30px;}
     text-align: center;
 }
 
-#grilla article:nth-of-type(5){
+#grilla article:nth-of-type(5) {
     background-image: url(img/grilla4.jpg);
     display: flex;
     flex-direction: column;
@@ -263,7 +301,7 @@ padding-left: 30px;}
     transition: all 1s;
 }
 
-#grilla article:nth-of-type(6){
+#grilla article:nth-of-type(6) {
     background-image: url(img/grilla5_dark.png);
     display: flex;
     grid-column: span 2;
@@ -275,48 +313,49 @@ padding-left: 30px;}
     transition: all 1s;
 }
 
-#grilla article a{
+#grilla article a {
     color: white;
     transition: all 0.3s;
     padding: 0.5em 0.8em;
 }
 
-#grilla article a:hover{
+#grilla article a:hover {
     background-color: white;
     color: #111111;
 }
 
-#grilla article div{
+#grilla article div {
     opacity: 0;
     width: 100%;
 }
 
-#grilla article:hover div{
+#grilla article:hover div {
     opacity: 1;
 }
 
-#grilla article:nth-of-type(1):hover{
-    background-image: url(img/grilla1.jpg), radial-gradient(rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0.836));
+#grilla article:nth-of-type(1):hover {
+    background-image: url(img/grilla1.jpg), radial-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.836));
     background-blend-mode: darken;
 }
 
-#grilla article:nth-of-type(3):hover{
-    background-image: url(img/grilla3_dark.png), radial-gradient(rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0.836));
+#grilla article:nth-of-type(3):hover {
+    background-image: url(img/grilla3_dark.png), radial-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.836));
     background-blend-mode: darken;
 }
 
-#grilla article:nth-of-type(5):hover{
-    background-image: url(img/grilla4_dark.png), radial-gradient(rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0.836));
+#grilla article:nth-of-type(5):hover {
+    background-image: url(img/grilla4_dark.png), radial-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.836));
     background-blend-mode: darken;
 }
-#grilla article:nth-of-type(6):hover{
-    background-image: url(img/grilla5.jpg), radial-gradient(rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0.836));
+
+#grilla article:nth-of-type(6):hover {
+    background-image: url(img/grilla5.jpg), radial-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.836));
     background-blend-mode: darken;
 }
 
 /*EQUIPO*/
 
-#equipo{
+#equipo {
     display: flex;
     flex-wrap: wrap;
     height: 80vh;
@@ -324,47 +363,47 @@ padding-left: 30px;}
     width: 94%;
 }
 
-#equipo img{
+#equipo img {
     width: 30%;
     border-radius: 5%;
     margin-left: 15px;
-    
+
 }
 
-#equipo article{
+#equipo article {
     display: flex;
     flex-direction: row;
 }
 
-#equipo h1{
+#equipo h1 {
     font-size: 2em;
     font-family: 'Chelsea Market';
 }
 
-#equipo h3{
+#equipo h3 {
     font-family: 'Chelsea Market';
     text-decoration: underline 1px solid;
 }
 
-#equipo p{
+#equipo p {
     width: 80%;
     letter-spacing: 1px;
     font-size: 600;
     text-align: justify;
 }
 
-#txtEquipo{
+#txtEquipo {
     background-color: #11111148;
     border-radius: 5%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     align-content: center;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.centro2 input{
+.centro2 input {
     width: 35px;
     height: 35px;
     background-color: #111111;
@@ -373,17 +412,17 @@ padding-left: 30px;}
     border-radius: 80%;
 }
 
-.centro2 input:hover{
+.centro2 input:hover {
     width: 35px;
     height: 35px;
     background-color: white;
-color: #111111;
+    color: #111111;
     border: black solid 1px;
     transition: 0.5s;
     border-radius: 80%;
 }
 
-.centro2{
+.centro2 {
     width: 70%;
     margin: 0 auto;
     display: flex;
@@ -392,93 +431,95 @@ color: #111111;
 }
 
 /*DETALLE*/
-#principal{
-    margin: 0 auto ;
+#principal {
+    margin: 0 auto;
     width: 70%;
     display: flex;
     padding: 25px;
     margin-top: 3em;
-    background-color: rgba(255, 255, 255, 0.719) ;
+    background-color: rgba(255, 255, 255, 0.719);
     height: 85vh;
 }
 
 #columna_der {
     width: 45%;
     margin-top: 60px;
-   
-  }
-  
-#info{
+
+}
+
+#info {
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-evenly;
-    
+
 }
-  
+
 #columna_izq {
     width: 65%;
     position: relative;
-   
-  }
-   
+
+}
+
 #columna_izq img {
     width: 70%;
     border-radius: 100%;
-  }
-   
+}
+
 #info h1 {
     font-weight: 500;
     font-size: 52px;
     letter-spacing: 2px;
     margin-top: 10px;
     font-family: 'Chelsea Market';
-  }
+}
 
-#info h2{
+#info h2 {
     font-size: 1.2em;
     font-weight: 600;
     color: #111111;
     line-height: 24px;
-  }
+}
 
-#miniaturas{
+#miniaturas {
     width: 800px;
-    margin: 3px auto;  
- }
+    margin: 3px auto;
+}
 
-#miniaturas img{
+#miniaturas img {
     width: 17%;
     opacity: 0.5;
     transition: 0.5s;
     margin: 0.5em;
- }
+}
 
-#miniaturas img:hover{
-    opacity: 1;}
+#miniaturas img:hover {
+    opacity: 1;
+}
 
-#precio{
+#precio {
     padding: 10px;
     text-align: center;
     margin-bottom: 5px;
 }
+
 /*RECOMENDACIONES*/
 
-#recomendaciones{
-margin:  0 auto;
-background-color: white;
-border-radius: 10%;
-box-shadow: 10px 5px 20px 5px black;
-width: 350px;
-margin-bottom: 2em;
+#recomendaciones {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 10px 5px 20px 5px black;
+    width: 350px;
+    margin-bottom: 2em;
 }
 
-#recomendaciones img{
+#recomendaciones img {
     width: 40%;
     border-radius: 100%;
 }
 
-#recomendacion{
+#recomendacion {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -488,46 +529,47 @@ margin-bottom: 2em;
     text-align: center;
 }
 
-#recomendacion h1{
+#recomendacion h1 {
     font-family: 'Chelsea Market';
     font-size: 17px;
 }
 
-#recomendacion h2{  
-   font-size: 15px;
+#recomendacion h2 {
+    font-size: 15px;
 }
 
-#recomendacion h3{
-   font-size: 13px;
+#recomendacion h3 {
+    font-size: 13px;
 }
 
-#reco{
+#reco {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#reco h1{
+#reco h1 {
     font-size: 30px;
-    font-family:'Chelsea Market' ;
+    font-family: 'Chelsea Market';
     margin-bottom: 0.5em;
     text-align: center;
 }
 
 /*REGISTRO*/
 
-#registro{
+#registro {
     width: 400px;
     margin: 0 auto;
     background-color: white;
 
 }
 
-#registro input, #centro input{
+#registro input,
+#centro input {
     padding: 10px;
 }
 
-.datos{ 
+.datos {
     padding: 10px;
     height: 70vh;
     display: flex;
@@ -537,23 +579,25 @@ margin-bottom: 2em;
     justify-content: space-evenly;
 }
 
-#registro h1{
-    font-size:3em;
-    font-family:'Chelsea Market' ;
+#registro h1 {
+    font-size: 3em;
+    font-family: 'Chelsea Market';
     margin: auto 0;
 }
 
-#registro select, #centro select{
+#registro select,
+#centro select {
     padding: 3px;
     margin-bottom: 2px;
 }
 
-#tipo,#txt_buscar{
+#tipo,
+#txt_buscar {
     margin-bottom: 1em;
 }
 
 
-footer{
+footer {
     text-align: center;
     font-size: 12px;
     border-top: 1px solid #b5b5b5;
@@ -562,7 +606,7 @@ footer{
     background-color: white;
 }
 
-#modal{
+#modal {
     background-color: white;
     border-bottom: #111111 5px solid;
     border-top: #111111 5px solid;
@@ -582,28 +626,29 @@ footer{
     padding-bottom: 20px;
 }
 
-#modal h1{
-    font-family:'Chelsea Market' ;
+#modal h1 {
+    font-family: 'Chelsea Market';
     margin-bottom: 1em;
 }
-#modal h2{
-   font-size: 21px;
-   color: #111111;
-   margin-bottom: 1em;
+
+#modal h2 {
+    font-size: 21px;
+    color: #111111;
+    margin-bottom: 1em;
 }
 
-#modal p{
+#modal p {
     height: 15px;
     width: 15px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
-    margin-left:95%;
+    margin-left: 95%;
     margin-bottom: 2em;
-    font-family:'Chelsea Market' ;
+    font-family: 'Chelsea Market';
 }
 
 #modal-hidden {
     display: none;
-  }
+}
